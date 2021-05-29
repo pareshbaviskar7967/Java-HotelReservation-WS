@@ -2,13 +2,23 @@ package main;
 
 public class Hotel {
 	String hotelName;
-	int rates;
-	int rating;
-
+	double rates;
 	// Creating constructor
-	public Hotel(String hotelName, int rates, int rating) {
+	public Hotel(String hotelName, double rates) {
 		this.hotelName = hotelName;
 		this.rates = rates;
-		this.rating = rating;
+	}
+
+	public String getHotelName() {
+		return hotelName;
+	}
+
+	public double getRates() {
+		return rates;
+	}
+
+	@Override
+	public String toString() {
+		return "Hotel [hotelName=" + hotelName + ", rates=" + rates + "]";
 	}
 }
