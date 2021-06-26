@@ -34,4 +34,12 @@ class HotelReservationTest {
 		if (result)
 			Assertions.assertEquals("Lakewood", hotelReservation.findCheapestHotel(inputDate));
 	}
+
+	@Test
+	public void givenWeekDayAndWeekendRate_WhenAdded_ShouldMatch() {
+		boolean result = hotelReservation.addHotelRates("Lakewood", 110.00, 80.00)
+				&& hotelReservation.addHotelRates("Bridgewood", 160.00, 110.00)
+				&& hotelReservation.addHotelRates("Ridgewood", 220.00, 100.00);
+		Assertions.assertTrue(result);
+	}
 }
