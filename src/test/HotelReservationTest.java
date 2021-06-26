@@ -1,7 +1,5 @@
 package test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -16,5 +14,4 @@ class HotelReservationTest {
 		boolean result = hotelReservation.addHotel("Lakewood", 110, 3);
 		Assertions.assertTrue(result);
 	}
-
 }
