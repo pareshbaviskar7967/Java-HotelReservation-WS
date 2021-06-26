@@ -3,34 +3,19 @@ package main;
 public class Hotel {
 	String hotelName;
 	double rates;
-	private Double weekendRates;
-
+	String weekday;
+    String weekend;
+    
 	// Creating constructor
-	public Hotel(String hotelName, double rates, Double weekendRates) {
-		this.hotelName = hotelName;
-		this.rates = rates;
-		this.weekendRates = weekendRates;
-	}
+    public Hotel(String hotelName,String weekday, String weekend)
+    {
+        this.hotelName=hotelName;
+        this.weekday=weekday;
+        this.weekend=weekend;
+    }
 
 	public Hotel(String hotelName, double rates) {
 		this.hotelName = hotelName;
 		this.rates = rates;
-	}
-
-	public String getHotelName() {
-		return hotelName;
-	}
-
-	public double getRates() {
-		return rates;
-	}
-
-	public Double getWeekendRates() {
-		return weekendRates;
-	}
-
-	@Override
-	public String toString() {
-		return "Hotel [hotelName=" + hotelName + ", rates=" + rates + "]";
 	}
 }
